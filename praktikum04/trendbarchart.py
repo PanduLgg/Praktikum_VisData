@@ -2,6 +2,15 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 
+
+st.title("Praktikum 04 Visualisasi Data")
+st.subheader("Bar Chart Filter")
+st.markdown("""
+1. Pandu Linggar - 0110220217
+2. Silvia Pitriani - 0110222136
+3. Rochmad Bima Setyawan - 0110122152
+""")
+
 #Data
 data = {
     'Tahun' : ['2019', '2020', '2021', '2022', '2023'],
@@ -13,7 +22,7 @@ data = {
 
 df = pd.DataFrame(data)
 
-st.title('Trend Line Chart Jumlah Mahasiswa Memilih Jurusan Komputer(5 Tahun Terakhir)')
+st.title('Trend Line Chart Jumlah Mahasiswa Memilih Jurusan Komputer (5 Tahun Terakhir)')
 filter_tahun = st.multiselect('Pilih Tahun', df['Tahun'], default=df['Tahun'])
 
 jurusan_list = ['Ilmu Komputer', 'Sistem Informasi', 'Teknik Informatika', 'Data Science']

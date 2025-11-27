@@ -2,6 +2,14 @@ import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 
+st.title("Praktikum 04 Visualisasi Data")
+st.subheader("Bar Chart")
+st.markdown("""
+1. Pandu Linggar - 0110220217
+2. Silvia Pitriani - 0110222136
+3. Rochmad Bima Setyawan - 0110122152
+""")
+
 #Data
 data = {
     'Jurusan' : ['Ilmu Komputer', 'Sistem Informasi', 'Teknik Informatika', 'Data Science'],
